@@ -31,7 +31,6 @@ jobs:
         uses: docker/metadata-action@v3
         with:
           images: ${{env.REGISTRY}}/${{env.IMAGE_NAME}}
-          
       - name: Build and push Docker image on GitHub registry
         uses: docker/build-push-action@v2
         with:
